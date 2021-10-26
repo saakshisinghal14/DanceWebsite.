@@ -1,0 +1,43 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+         ul
+            div#logo
+             img(src="/static/logo.png")
+             | SDA
+             li #[a(href="/") Home]  
+             li #[a(href="/") About]
+             li #[a(href="/") Services] 
+             li #[a(href="/") Class info] 
+             li #[a(href="/") Contact Us] 
+             
+    section#introSection 
+          div  Welcome to Saakshi's Dance Academy 
+          div.small Eat Sleep Dance Repeat
+    section#missionSection 
+      h2 Our Mission
+      div.card#prefection
+        h3 Dance Prefection 
+      div.card#dance
+        h3 Dance the way you like 
+      div.card#expert
+        h3 Expert Teaching 
+
+    section#sponsorsSection 
+          h2 Our Sponsors         
+          div#sponsors
+             img( src="/static/microsoft.png", alt="sponsors image", class="spimage")
+             img( src="/static/hp.png", alt="sponsors image", class="spimage")
+             img( src="/static/skype.png", alt="sponsors image", class="spimage")
+             img( src="/static/apple.png", alt="sponsors image", class="spimage")
+     
+    footer#footer 
+          | Copyright  &copy 2021 SaakshiDanceAcademy.com | All rights reserved
+          
+    script
+      include ../static/index.js

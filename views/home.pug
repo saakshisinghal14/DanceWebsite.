@@ -1,0 +1,34 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+block style 
+    style
+      include ../static/style.css
+
+block content 
+    
+             
+    section#introSection 
+          div  Welcome to Saakshi's Dance Academy 
+          div.small Eat Sleep Dance Repeat
+    section#missionSection 
+      h2 Our Mission
+      div.card#prefection
+        h3 Dance Prefection 
+      div.card#dance
+        h3 Dance the way you like 
+      div.card#expert
+        h3 Expert Teaching 
+
+    section#sponsorsSection 
+          h2 Our Sponsors         
+          div#sponsors
+             img( src="/static/microsoft.png", alt="sponsors image", class="spimage")
+             img( src="/static/hp.png", alt="sponsors image", class="spimage")
+             img( src="/static/skype.png", alt="sponsors image", class="spimage")
+             img( src="/static/apple.png", alt="sponsors image", class="spimage")
+ 
+
+ 
+
